@@ -74,13 +74,14 @@ div.slider div.arrows {
 
 div.slider div.arrow_left {
     background: url('./assets/arrow_left.png') no-repeat;
-    top: 281px;
+    top: 376px;
     left: 42px;
 }
 
 div.slider div.arrow_right {
     background: url('./assets/arrow_right.png') no-repeat;
-    top: 281px;
+    top: 376px;
+    right: 36px;
 }
 
 div.slider div.apple {
