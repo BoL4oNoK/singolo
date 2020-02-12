@@ -89,7 +89,7 @@ div.slider div.arrow_right {
 }
 
 div.slider div.apple {
-    width: 899px;
+    width: 900px;
 }
 
 div.content {
@@ -98,6 +98,7 @@ div.content {
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
     margin: 0 auto;
+    padding-top: 60px;
 }
 
 div.content h1 {
@@ -106,4 +107,16 @@ div.content h1 {
     font-size: 29px;
     letter-spacing: 0.009em;
     line-height: 35px;
+}
+
+svg {
+    border-radius: 90px;
+    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+}
+
+path.shp0 {
+    width: 32px;
+    height: 32px;
 }
