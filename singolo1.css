@@ -70,6 +70,7 @@ div.slider div.arrows {
     height: 27px;
     width: 20px;
     margin-top: 281px;
+    position: relative;
 }
 
 div.slider div.arrow_left {
