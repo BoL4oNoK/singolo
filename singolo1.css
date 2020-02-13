@@ -82,6 +82,10 @@ div.slider div.arrows {
     top: 281px;
 }
 
+div.slider div.arrows:hover {
+    border: 1px solid black;
+}
+
 div.slider div.arrow_left {
     background: url('./assets/img/arrow_left.png') no-repeat;
     left: -82px;
