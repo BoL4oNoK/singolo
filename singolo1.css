@@ -116,10 +116,11 @@ div.content h1 {
 }
 
 div.content p {
-    margin-top: 22px;
+    margin-top: 17px;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 30px;
     font-weight: 300;
+    letter-spacing: -0.05px;
 }
 
 div.content > div.container {
