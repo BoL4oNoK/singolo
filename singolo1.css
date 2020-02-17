@@ -129,49 +129,51 @@ div.content {
     background-color: #f2f2f2;
     border-bottom: 5px solid #ffffff;
     margin: 0 auto;
-    padding: 63px 40px 59px 40px;
+    padding: 64px 40px 59px 40px;
     color: #767e9e;
 }
 
 div.content h1 {
     color: #666d89;
-    font-weight: 900;
-    font-size: 3.7ex;
-    letter-spacing: 0.003em;
-    line-height: 35px;
+    font-weight: bold;
+    font-size: 1.85rem;
+    letter-spacing: 0.03rem;
+    line-height: 2rem;
 }
 
 div.content p {
-    margin-top: 17px;
+    margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
-    letter-spacing: -0.05px;
+    letter-spacing: -0.013rem;
+    text-align: justify;
 }
 
 div.content > div.container {
     display: grid;
     grid-template-columns: 70px 249px 70px 250px 70px 240px;
     grid-template-rows: 123px;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 div.content > div.container > div.items {
     justify-self: left;
+    padding-top: 4px;
 }
 
 div.content > div.container > div.item-text {
     padding-left: 10px;
+    padding-top: 0;
     overflow: hidden;
-    width: 240px;
+    width: 220px;
 }
 
 div.content > div.container > div.item-text strong {
     color: #666d89;
-    font-weight: 900;
-    font-size: 2.2ex;
-    letter-spacing: 0.003em;
-    line-height: 15px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.013rem;
 }
 
 div.content > div.container > div.item-text p {
@@ -179,5 +181,5 @@ div.content > div.container > div.item-text p {
     font-size: 0.8em;
     margin-top: 8px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 300;
 }
