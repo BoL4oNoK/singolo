@@ -160,20 +160,103 @@ div.content > div.container > div.item-text {
     padding-top: 1.2px;
     overflow: hidden;
     width: 220px;
+    color: #666d89;
 }
 
-div.content > div.container > div.item-text strong {
-    color: #666d89;
+div.content > div.container > div.Design strong {
     font-weight: 900;
     font-size: 19px;
-    line-height: 27px;
+    line-height: 26px;
     letter-spacing: -0.6px;
 }
 
-div.content > div.container > div.item-text p {
+div.content > div.container > div.Design p {
     color: #666d89;
-    font-size: 12px;
+    font-size: 13px;
+    margin-top: 6px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Ideas strong {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.35px;
+}
+
+div.content > div.container > div.Ideas p {
+    color: #666d89;
+    font-size: 13px;
     margin-top: 5px;
     line-height: 22px;
     font-weight: 400;
+    letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Answers strong {
+    font-weight: 900;
+    padding-left: 2px;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.55px;
+}
+
+div.content > div.container > div.Answers p {
+    color: #666d89;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Responsive strong {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.55px;
+}
+
+div.content > div.container > div.Responsive p {
+    color: #666d89;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+}
+
+div.content > div.container > div.Support strong {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.9px;
+}
+
+div.content > div.container > div.Support p {
+    color: #666d89;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: -0.47px;
+}
+
+div.content > div.container > div.Star strong {
+    font-weight: 900;
+    font-size: 19px;
+    padding-left: 2px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Star p {
+    color: #666d89;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
 }
