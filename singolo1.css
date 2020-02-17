@@ -4,7 +4,8 @@
 }
 
 body {
-    font-family: "Lato", Arial, sans-serif;;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 400;
     background-color: aquamarine;
     min-width: 1020px;
     margin: 0 auto;
@@ -22,32 +23,25 @@ header {
 }
 
 div.logo {
-    font-family: 'Lato', Arial, sans-serif;
-    font-weight: bold;
     color: #ffffff;
     display: inline-block;
-    font-size: 1.49rem;
-    line-height: 1rem;
+    font-size: 24px;
+    line-height: 20px;
 }
 
 div.logo::after {
     content: "*";
     color: #f06c64;
     font-size: 24px;
-    margin-left: -0.05rem;
 }
 
 nav.navbar {
     display: inline-block;
     width: 372px;
-    font-family: 'Lato', Arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 0.4px;
-    line-height: 0.8em;
-    padding-top: 9px;
+    padding-top: 7px;
     padding-right: 9px;
     float: right;
+    font-size: 12px;
 }
 
 nav.navbar ul {
@@ -113,7 +107,7 @@ div.slider div.arrow_right {
 }
 
 div.slider div.apple {
-   display: inline-block;
+    display: inline-block;
 }
 
 div.slider img.iPhone-Vert {
@@ -129,25 +123,24 @@ div.content {
     background-color: #f2f2f2;
     border-bottom: 5px solid #ffffff;
     margin: 0 auto;
-    padding: 64px 40px 59px 40px;
+    padding: 60px 40px 59px 40px;
     color: #767e9e;
 }
 
 div.content h1 {
     color: #666d89;
-    font-weight: bold;
-    font-size: 1.85rem;
-    letter-spacing: 0.03rem;
-    line-height: 2rem;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0.1px;
 }
 
 div.content p {
-    margin-top: 20px;
+    margin-top: 15px;
+    text-align: justify;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 300;
-    letter-spacing: -0.013rem;
-    text-align: justify;
+    letter-spacing: -0.33px;
 }
 
 div.content > div.container {
@@ -164,22 +157,23 @@ div.content > div.container > div.items {
 
 div.content > div.container > div.item-text {
     padding-left: 10px;
-    padding-top: 0;
+    padding-top: 1.2px;
     overflow: hidden;
     width: 220px;
 }
 
 div.content > div.container > div.item-text strong {
     color: #666d89;
-    font-weight: 700;
-    font-size: 1.15rem;
-    letter-spacing: -0.013rem;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: -0.6px;
 }
 
 div.content > div.container > div.item-text p {
-    color: #767e9e;
-    font-size: 0.8em;
-    margin-top: 8px;
+    color: #666d89;
+    font-size: 12px;
+    margin-top: 5px;
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 400;
 }
