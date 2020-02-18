@@ -145,7 +145,7 @@ div.content p {
 
 div.content > div.container {
     display: grid;
-    grid-template-columns: 70px 249px 70px 250px 70px 240px;
+    grid-template-columns: 319px 320px 320px;
     grid-template-rows: 123px;
     margin-top: 40px;
 }
@@ -163,6 +163,11 @@ div.content > div.container > div.item-text {
     color: #666d89;
 }
 
+div.content > div.container > div.Design {
+    background: url("./assets/img/pen.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
+}
+
 div.content > div.container > div.Design strong {
     font-weight: 900;
     font-size: 19px;
@@ -171,12 +176,16 @@ div.content > div.container > div.Design strong {
 }
 
 div.content > div.container > div.Design p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 6px;
     line-height: 21px;
     font-weight: 400;
     letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Ideas {
+    background: url("./assets/img/lightbulb.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
 }
 
 div.content > div.container > div.Ideas strong {
@@ -187,12 +196,16 @@ div.content > div.container > div.Ideas strong {
 }
 
 div.content > div.container > div.Ideas p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 5px;
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Answers {
+    background: url("./assets/img/heart.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
 }
 
 div.content > div.container > div.Answers strong {
@@ -204,12 +217,16 @@ div.content > div.container > div.Answers strong {
 }
 
 div.content > div.container > div.Answers p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 5px;
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.4px;
+}
+
+div.content > div.container > div.Responsive {
+    background: url("./assets/img/phone.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
 }
 
 div.content > div.container > div.Responsive strong {
@@ -220,12 +237,16 @@ div.content > div.container > div.Responsive strong {
 }
 
 div.content > div.container > div.Responsive p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 5px;
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.45px;
+}
+
+div.content > div.container > div.Support {
+    background: url("./assets/img/bubble.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
 }
 
 div.content > div.container > div.Support strong {
@@ -236,12 +257,16 @@ div.content > div.container > div.Support strong {
 }
 
 div.content > div.container > div.Support p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 5px;
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.47px;
+}
+
+div.content > div.container > div.Star {
+    background: url("./assets/img/Star.png") no-repeat 0px 3.5px;
+    padding-left: 80px;
 }
 
 div.content > div.container > div.Star strong {
@@ -253,7 +278,6 @@ div.content > div.container > div.Star strong {
 }
 
 div.content > div.container > div.Star p {
-    color: #666d89;
     font-size: 13px;
     margin-top: 5px;
     line-height: 21px;
