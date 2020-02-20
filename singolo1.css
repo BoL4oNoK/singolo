@@ -159,7 +159,7 @@ body {
     padding-left: 10px;
     padding-top: 1.2px;
     overflow: hidden;
-    width: 220px;
+    max-width: 220px;
     color: #666d89;
     text-align: justify;
 }
