@@ -35,13 +35,15 @@ body {
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 0.01em;
+    color: #666d89;
 }
 
 .portfolio-description {
-    font-size: 18px;
     margin-top: 21px;
+    font-size: 18px;
     letter-spacing: -0.012em;
     font-weight: 300;
+    color: #767e9e;
 }
 
 .buttons-bar {
@@ -50,14 +52,14 @@ body {
 
 .button {
     height: 22px;
-    padding: 0px 8px;
+    text-align: center;
+    padding: 0 6px;
     background-color: #0f0f0f;
-    border: 1px solid #666d89;
+    border: 1.5px solid #666d89;
     border-radius: 5px;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     color: #767e9e;
-    line-height: 22px;
 }
 
 .buttons-bar button::after {
@@ -97,6 +99,7 @@ body {
 .about_us-header {
     font-size: 30px;
     font-weight: 900;
+    color: #666d89;
 }
 
 .about_us-description {
@@ -105,4 +108,41 @@ body {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.33px;
+    color: #767e9e;
+}
+
+.about_us-container {
+    display: grid;
+    max-height: 600px;
+    overflow: hidden;
+    margin: 44px 0 64px 40px;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 300px 111px 35px;
+}
+
+.about_us-profiles {
+    padding-top: 19px;
+}
+
+.about_us-profile-name {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    color: #666d89;
+}
+
+.about_us-profile-description {
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -0.15px;
+    color: #767e9e;
+    margin-top: 8px;
+}
+
+.about_us-socials {
+    padding-left: 1px;
+}
+
+.about_us-socials-icon {
+    margin-right: 4px;
 }
