@@ -24,18 +24,85 @@ body {
 
 .portfolio {
     background-color: #2d303a;
-    border-bottom: 1px solid  #323746;
+    border-bottom: 7px solid  #323746;
+}
+
+.portfolio-wrapper {
+    padding: 63px 20px 20px 40px;
 }
 
 .portfolio-header {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.01em;
 }
 
 .portfolio-description {
+    font-size: 18px;
+    margin-top: 21px;
+    letter-spacing: -0.012em;
+    font-weight: 300;
+}
+
+.buttons-bar {
+    margin-top: 13px;
+}
+
+.button {
+    height: 22px;
+    padding: 0px 8px;
+    background-color: #0f0f0f;
+    border: 1px solid #666d89;
+    border-radius: 5px;
     font-size: 12px;
+    font-weight: 400;
+    color: #767e9e;
+    line-height: 22px;
+}
+
+.buttons-bar button::after {
+    margin-right: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #dedede;
+    border-color: #c5c5c5;
+}
+
+.portfolio-container {
+    display: grid;
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 19px;
+    margin-bottom: 47px;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(3, 207px);
+}
+
+.portfolio-items {
+    overflow: hidden;
 }
 
 .about_us {
+    padding-top: 5px;
     background-color: #f2f2f2;
     border-bottom: 1px solid #ffffff;
+}
+
+.about_us-wrapper {
+    padding: 57px 1px 1px 40px;
+}
+
+.about_us-header {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.about_us-description {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.33px;
 }
