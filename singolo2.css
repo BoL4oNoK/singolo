@@ -79,10 +79,10 @@ body {
 
 .portfolio-container {
     display: grid;
-    max-height: 600px;
+    max-height: 601px;
     overflow: hidden;
     margin-top: 19px;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 207px);
 }
@@ -122,7 +122,7 @@ body {
     max-height: 600px;
     overflow: hidden;
     margin: 43px 0 63px 0px;
-    grid-template-columns: repeat(3, 320px);
+    grid-template-columns: 319px 321px 320px;
     grid-template-rows: 300px 111px 35px;
 }
 
@@ -151,7 +151,8 @@ body {
     text-align: justify;
 }
 
-.about_us-socials {
+.about_us-items-Adam-socials,
+.about_us-items-Desmond-socials {
     padding-left: 1px;
 }
 
