@@ -151,6 +151,10 @@ body {
     text-align: justify;
 }
 
+.about_us-items-Adam > .about_us-profile-description {
+    letter-spacing: -0.012em;
+}
+
 .about_us-items-Adam-socials,
 .about_us-items-Desmond-socials {
     padding-left: 1px;

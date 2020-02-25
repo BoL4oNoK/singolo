@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 00;
+    font-weight: 400;
     font-display: swap;
     src: url('./assets/fonts/LatoLatin-Regular.woff') format("woff");
 }
