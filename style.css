@@ -434,6 +434,8 @@ body {
 
 .about_us-socials-icon:hover {
     cursor: pointer;
+    background-color: #f06c64;
+    border-radius: 20px;
 }
 
 /* Singolo 3 */
@@ -596,4 +598,6 @@ body {
 
 .footer-socials-icon:hover {
     cursor: pointer;
+    background-color: #f06c64;
+    border-radius: 20px;
 }
