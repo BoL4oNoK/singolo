@@ -478,10 +478,11 @@ body {
 .contacts-form-textarea {
     height: 38px;
     border-radius: 5px;
+    border: 0;
     background-color: #d6564f;
     color: #f48c8f;
-    width: 601px;
-    margin-top: 13px;
+    width: 603px;
+    margin-top: 16px;
 }
 
 .contacts-form-input {
@@ -503,6 +504,7 @@ body {
 .contacts-form-input[type=submit] {
     width: 300px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .contacts-form-input::placeholder,
