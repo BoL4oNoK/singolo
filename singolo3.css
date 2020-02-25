@@ -170,3 +170,7 @@ body {
     width: 152px;
     justify-content: space-between;
 }
+
+.footer-socials-icon:hover {
+    cursor: pointer;
+}
