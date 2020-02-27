@@ -588,6 +588,7 @@ body {
 .footer-copyright {
     padding-top: 9px;
     font-size: 12px;
+    letter-spacing: -0.013em;
 }
 
 .footer-social-icons {
