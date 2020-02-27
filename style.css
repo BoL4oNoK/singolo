@@ -581,7 +581,7 @@ body {
 }
 
 .wrapper-footer {
-    padding: 22px 40px;
+    padding: 22px 40px 17px 40px;
     display: flex;
     justify-content: space-between;
 }
