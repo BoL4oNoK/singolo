@@ -405,7 +405,9 @@ body {
     font-weight: 900;
     color: #666d89;
     text-align: justify;
-    width: 130px;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
     letter-spacing: -0.049px;
 }
