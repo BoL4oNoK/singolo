@@ -94,6 +94,11 @@ body {
     color: #f48c8f;
 }
 
+.contacts-form-input:focus,
+.contacts-form-textarea:focus {
+    outline: none;
+}
+
 .contacts-item-contacts-info {
     padding-top: 15px;
     padding-left: 40px;
