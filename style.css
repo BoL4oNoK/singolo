@@ -509,6 +509,7 @@ body {
 .contacts-form-input[type=submit] {
     width: 300px;
     margin: 0 auto;
+    padding: 0;
     cursor: pointer;
 }
 
