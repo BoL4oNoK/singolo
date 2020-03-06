@@ -34,10 +34,8 @@ body {
     line-height: 20px;
 }
 
-.logo::after {
-    content: "*";
+.logo > span {
     color: #f06c64;
-    font-size: 24px;
 }
 
 .navbar {
@@ -520,6 +518,14 @@ body {
 .contacts-form-input:focus,
 .contacts-form-textarea:focus {
     outline: none;
+}
+
+.contacts-form-input:required:focus:valid {
+    box-shadow: 0 0 5px #00ff00;
+}
+
+.contacts-form-input:required:focus:invalid {
+    box-shadow: 0 0 5px #ff0000;
 }
 
 .contacts-form-input:-webkit-autofill {
