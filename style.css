@@ -183,6 +183,8 @@ body {
     line-height: 21px;
     font-weight: 400;
     letter-spacing: -0.4px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 .wrapper-content > .container > .Ideas {
@@ -203,6 +205,8 @@ body {
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.4px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 .wrapper-content > .container > .Answers {
@@ -224,6 +228,8 @@ body {
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.4px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 .wrapper-content > .container > .Responsive {
@@ -244,6 +250,8 @@ body {
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.45px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 .wrapper-content > .container > .Support {
@@ -264,6 +272,8 @@ body {
     line-height: 22px;
     font-weight: 400;
     letter-spacing: -0.47px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 .wrapper-content > .container > .Star {
@@ -285,6 +295,8 @@ body {
     line-height: 21px;
     font-weight: 400;
     letter-spacing: -0.35px;
+    overflow: hidden;
+    max-height: 70px;
 }
 
 /* Singolo 2 */
@@ -418,6 +430,8 @@ body {
     margin-top: 3px;
     width: 300px;
     text-align: justify;
+    max-height: 40px;
+    overflow: hidden;
 }
 
 .about_us-items-Adam > .about_us-profile-description {
