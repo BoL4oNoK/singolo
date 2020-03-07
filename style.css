@@ -599,12 +599,14 @@ body {
     height: 14px;
 }
 
+.contacts-info-address-link,
 .contacts-info-phone-link,
 .contacts-info-email-link {
     text-decoration: none;
     color: inherit;
 }
 
+.contacts-info-address-link:hover,
 .contacts-info-phone-link:hover,
 .contacts-info-email-link:hover {
     text-decoration: underline;
