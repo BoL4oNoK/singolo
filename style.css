@@ -44,6 +44,7 @@ body {
     padding-top: 7px;
     padding-right: 9px;
     font-size: 12px;
+    max-height: 14px;
 }
 
 .navbar ul {
@@ -418,6 +419,7 @@ body {
     max-width: 300px;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     display: inline-block;
     letter-spacing: -0.049px;
 }
@@ -528,6 +530,7 @@ body {
 .contacts-form-input::placeholder,
 .contacts-form-textarea::placeholder {
     color: #f48c8f;
+    opacity: 1;
 }
 
 .contacts-form-input:focus,
@@ -593,6 +596,7 @@ body {
     font-size: 12px;
     letter-spacing: -0.01em;
     width: 120px;
+    height: 14px;
 }
 
 .contacts-info-phone-link,
@@ -620,6 +624,7 @@ body {
     padding-top: 9px;
     font-size: 12px;
     letter-spacing: -0.013em;
+    color: #666d89;
 }
 
 .footer-social-icons {
