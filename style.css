@@ -64,7 +64,8 @@ body {
     color: #ffffff;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:focus {
     color: #f06c64;
 }
 
@@ -93,7 +94,8 @@ body {
     border: none;
 }
 
-.slider .arrows:hover {
+.slider .arrows:hover,
+.slider .arrows:focus {
     background-color:  #f0f8ff;
 }
 
@@ -351,7 +353,8 @@ body {
     color: #767e9e;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     cursor: pointer;
     color: #dedede;
     border-color: #c5c5c5;
@@ -449,7 +452,8 @@ body {
     margin-right: 4px;
 }
 
-.about_us-socials-icon:hover {
+.about_us-socials-icon:hover,
+.about_us-socials > a:focus > .about_us-socials-icon {
     cursor: pointer;
     background-color: #f06c64;
     border-radius: 20px;
@@ -608,7 +612,11 @@ body {
 
 .contacts-info-address-link:hover,
 .contacts-info-phone-link:hover,
-.contacts-info-email-link:hover {
+.contacts-info-email-link:hover,
+.contacts-info-address-link:focus,
+.contacts-info-phone-link:focus,
+.contacts-info-email-link:focus {
+    outline: none;
     text-decoration: underline;
 }
 
@@ -635,7 +643,8 @@ body {
     justify-content: space-between;
 }
 
-.footer-socials-icon:hover {
+.footer-socials-icon:hover,
+.footer-social-icons > a:focus > .footer-socials-icon {
     cursor: pointer;
     background-color: #f06c64;
     border-radius: 20px;
