@@ -44,6 +44,7 @@ body {
     padding-top: 7px;
     padding-right: 9px;
     font-size: 12px;
+    max-height: 14px;
 }
 
 .navbar ul {
@@ -63,7 +64,8 @@ body {
     color: #ffffff;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:focus {
     color: #f06c64;
 }
 
@@ -92,7 +94,8 @@ body {
     border: none;
 }
 
-.slider .arrows:hover {
+.slider .arrows:hover,
+.slider .arrows:focus {
     background-color:  #f0f8ff;
 }
 
@@ -125,7 +128,7 @@ body {
 
 .wrapper-content {
     width: 940px;
-    padding: 60px 40px 58px 40px;
+    padding: 60px 40px 64px 40px;
 }
 
 .wrapper-content .services-header {
@@ -184,7 +187,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.4px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 .wrapper-content > .container > .Ideas {
@@ -206,7 +209,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.4px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 .wrapper-content > .container > .Answers {
@@ -229,7 +232,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.4px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 .wrapper-content > .container > .Responsive {
@@ -251,7 +254,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.45px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 .wrapper-content > .container > .Support {
@@ -273,7 +276,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.47px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 .wrapper-content > .container > .Star {
@@ -296,7 +299,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.35px;
     overflow: hidden;
-    max-height: 70px;
+    max-height: 60px;
 }
 
 /* Singolo 2 */
@@ -350,7 +353,8 @@ body {
     color: #767e9e;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     cursor: pointer;
     color: #dedede;
     border-color: #c5c5c5;
@@ -418,6 +422,7 @@ body {
     max-width: 300px;
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     display: inline-block;
     letter-spacing: -0.049px;
 }
@@ -447,7 +452,8 @@ body {
     margin-right: 4px;
 }
 
-.about_us-socials-icon:hover {
+.about_us-socials-icon:hover,
+.about_us-socials > a:focus > .about_us-socials-icon {
     cursor: pointer;
     background-color: #f06c64;
     border-radius: 20px;
@@ -528,6 +534,7 @@ body {
 .contacts-form-input::placeholder,
 .contacts-form-textarea::placeholder {
     color: #f48c8f;
+    opacity: 1;
 }
 
 .contacts-form-input:focus,
@@ -593,16 +600,23 @@ body {
     font-size: 12px;
     letter-spacing: -0.01em;
     width: 120px;
+    height: 14px;
 }
 
+.contacts-info-address-link,
 .contacts-info-phone-link,
 .contacts-info-email-link {
     text-decoration: none;
     color: inherit;
 }
 
+.contacts-info-address-link:hover,
 .contacts-info-phone-link:hover,
-.contacts-info-email-link:hover {
+.contacts-info-email-link:hover,
+.contacts-info-address-link:focus,
+.contacts-info-phone-link:focus,
+.contacts-info-email-link:focus {
+    outline: none;
     text-decoration: underline;
 }
 
@@ -620,6 +634,7 @@ body {
     padding-top: 9px;
     font-size: 12px;
     letter-spacing: -0.013em;
+    color: #666d89;
 }
 
 .footer-social-icons {
@@ -628,7 +643,8 @@ body {
     justify-content: space-between;
 }
 
-.footer-socials-icon:hover {
+.footer-socials-icon:hover,
+.footer-social-icons > a:focus > .footer-socials-icon {
     cursor: pointer;
     background-color: #f06c64;
     border-radius: 20px;
