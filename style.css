@@ -404,9 +404,9 @@ body {
     display: grid;
     max-height: 600px;
     overflow: hidden;
-    margin: 43px 0 63px 0px;
+    margin: 43px 0 58px 0px;
     grid-template-columns: 319px 321px 320px;
-    grid-template-rows: 300px 111px 35px;
+    grid-template-rows: 300px 111px 40px;
 }
 
 .about_us-profiles {
@@ -444,12 +444,21 @@ body {
 }
 
 .about_us-items-Adam-socials,
-.about_us-items-Desmond-socials {
+.about_us-items-Desmond-socials,
+.about_us-items-Scolara-socials {
     padding-left: 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 153px;
 }
 
-.about_us-socials-icon {
-    margin-right: 4px;
+.about_us-items-Scolara-socials {
+    padding-left: 0;
+}
+
+.about_us-socials > a {
+    width: 32px;
+    height: 32px;
 }
 
 .about_us-socials-icon:hover,
