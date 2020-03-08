@@ -31,7 +31,9 @@ body {
     color: #ffffff;
     display: inline-block;
     font-size: 24px;
+    font-weight: 700;
     line-height: 20px;
+    letter-spacing: -0.01em;
 }
 
 .logo > span {
@@ -449,7 +451,7 @@ body {
     padding-left: 1px;
     display: flex;
     justify-content: space-between;
-    width: 153px;
+    width: 152px;
 }
 
 .about_us-items-Scolara-socials {
