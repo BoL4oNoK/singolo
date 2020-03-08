@@ -31,7 +31,9 @@ body {
     color: #ffffff;
     display: inline-block;
     font-size: 24px;
+    font-weight: 700;
     line-height: 20px;
+    letter-spacing: -0.01em;
 }
 
 .logo > span {
@@ -345,7 +347,7 @@ body {
     display: inline-block;
     text-align: center;
     padding: 0 6px;
-    background-color: #0f0f0f;
+    background-color: #2d303a;
     border: 1.5px solid #666d89;
     border-radius: 5px;
     font-size: 12px;
@@ -404,9 +406,9 @@ body {
     display: grid;
     max-height: 600px;
     overflow: hidden;
-    margin: 43px 0 63px 0px;
+    margin: 43px 0 58px 0px;
     grid-template-columns: 319px 321px 320px;
-    grid-template-rows: 300px 111px 35px;
+    grid-template-rows: 300px 111px 40px;
 }
 
 .about_us-profiles {
@@ -444,12 +446,21 @@ body {
 }
 
 .about_us-items-Adam-socials,
-.about_us-items-Desmond-socials {
+.about_us-items-Desmond-socials,
+.about_us-items-Scolara-socials {
     padding-left: 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 152px;
 }
 
-.about_us-socials-icon {
-    margin-right: 4px;
+.about_us-items-Scolara-socials {
+    padding-left: 0;
+}
+
+.about_us-socials > a {
+    width: 32px;
+    height: 32px;
 }
 
 .about_us-socials-icon:hover,
@@ -503,6 +514,9 @@ body {
     border-radius: 5px;
     border: 0;
     background-color: #d6564f;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
     color: #f48c8f;
     width: 603px;
     margin-top: 16px;
@@ -510,16 +524,14 @@ body {
 
 .contacts-form-input {
     padding-left: 16px;
-    font-size: 11px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
 }
 
 .contacts-form-textarea {
-    height: 190px;
-    padding-top: 12px;
+    height: 189px;
+    padding-top: 13px;
     padding-left: 16px;
-    font-size: 14px;
-    letter-spacing: -0.17em;
+    letter-spacing: 0.035em;
     line-height: 12px;
     resize: none;
 }
