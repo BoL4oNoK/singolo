@@ -31,3 +31,12 @@ PORTFOLIO.addEventListener('click', event => {
         event.target.classList.add('portfolio-selected');
     }
 });
+document.getElementById('submit-button').addEventListener('click', event => {
+    document.getElementById('pop-up-subject').innerText = (document.getElementById('form-input-subject').value) ? 'Тема: ' + document.getElementById('form-input-subject').value : 'Без темы';
+    document.getElementById('pop-up-message').innerText = (document.getElementById('form-area-message').value) ? 'Описание: ' + document.getElementById('form-area-message').value : 'Без описания';
+
+    document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
+});
+document.getElementById('btn-close').addEventListener('click', event => {
+    document.getElementById('pop-up_msg').classList.add('pop-up_hidden');
+});
