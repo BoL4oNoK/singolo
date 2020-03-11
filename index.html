@@ -12,8 +12,8 @@
                 <div class="wrapper-header">
                     <h1 class="logo">SINGOLO<span>*</span></h1>
                     <nav class="navbar">
-                        <ul>
-                            <li><a href="#">HOME</a></li>
+                        <ul id="main_menu">
+                            <li class="menu_active"><a href="#">HOME</a></li>
                             <li><a href="#services">SERVICES</a></li>
                             <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="#about_us">ABOUT</a></li>
@@ -76,14 +76,14 @@
                         <h2 class="portfolio-header">Portfolio</h2>
                         <p class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                         <div class="buttons-bar">
-                            <ul class="buttons-list">
-                                <li><button class="button">All</button></li>
+                            <ul class="buttons-list" id="buttons_list">
+                                <li><button class="button button_active">All</button></li>
                                 <li><button class="button">Web Design</button></li>
                                 <li><button class="button">Graphic Design</button></li>
                                 <li><button class="button">Artwork</button></li>
                             </ul>
                         </div>
-                        <div class="portfolio-container">
+                        <div class="portfolio-container" id="portfolio-list">
                             <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_1.png" alt="portfolio-image" width="220" height="187"></div>
                             <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_2.png" alt="portfolio-image" width="220" height="187"></div>
                             <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_3.png" alt="portfolio-image" width="220" height="187"></div>
@@ -150,12 +150,12 @@
                         <p class="contacts-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                         <div class="contacts-container">
                             <div class="contacts-item-form">
-                                <form action="./index.html" method="GET" class="contacts-form">
-                                    <input class="contacts-form-input" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё])+" title="Username may consist only letters and spaces" required>
-                                    <input class="contacts-form-input" type="email" name="email" placeholder="Email (Required)" pattern="([A-Za-z0-9._-])+@([A-Za-z0-9-_])+\.([a-z]){2,3}" title="Email must be in format <username>@<domain>" required>
-                                    <input class="contacts-form-input" type="text" name="subject" placeholder="Subject">
-                                    <textarea  class="contacts-form-textarea" name="message" placeholder="Describe your project in detail..."></textarea>
-                                    <input class="contacts-form-input" type="submit" value="Submit">
+                                <form action="./index.html" method="GET" class="contacts-form" onsubmit="return false;">
+                                    <input class="contacts-form-input" id="form-input-name" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё])+" title="Username may consist only letters and spaces" required>
+                                    <input class="contacts-form-input" id="form-input-email" type="email" name="email" placeholder="Email (Required)" pattern="([A-Za-z0-9._-])+@([A-Za-z0-9-_])+\.([a-z]){2,3}" title="Email must be in format <username>@<domain>" required>
+                                    <input class="contacts-form-input" id="form-input-subject" type="text" name="subject" placeholder="Subject">
+                                    <textarea  class="contacts-form-textarea" id="form-area-message" name="message" placeholder="Describe your project in detail..."></textarea>
+                                    <input class="contacts-form-input" id="submit-button" type="submit" value="Submit">
                                 </form>
                             </div>
                             <div class="contacts-item-contacts-info">
@@ -164,6 +164,14 @@
                                 <p class="contacts-info-address"><a class="contacts-info-address-link" href="https://www.google.com/maps/search/Elm+St.+14%2F05+Lost+City/@53.8443776,27.5775488,13z" title="Find us on Google Maps">Elm St. 14/05 Lost City</a></p>
                                 <p class="contacts-info-phone"><a class="contacts-info-phone-link" href="tel:035283318635" title="Our phone number">03528 331 86 35</a></p>
                                 <p class="contacts-info-email"><a class="contacts-info-email-link" href="mailto:info@singolo.com" title="Our email">info@singolo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="pop-up_hidden" id="pop-up_msg">
+                            <div class="message">
+                                <p>Письмо отправлено</p>
+                                <p id="pop-up-subject" class="pop-up-text"></p>
+                                <p id="pop-up-message" class="pop-up-text"></p>
+                                <button id="btn-close">OK</button>
                             </div>
                         </div>
                     </div>                
@@ -183,5 +191,7 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="./index.js"></script>
     </body>
 </html>
