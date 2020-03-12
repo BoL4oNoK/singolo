@@ -46,3 +46,21 @@ document.getElementById('submit-button').addEventListener('click', event => {
 document.getElementById('btn-close').addEventListener('click', event => {
     document.getElementById('pop-up_msg').classList.add('pop-up_hidden');
 });
+document.getElementById('iPhone_Vert').addEventListener('click', event => {
+    const display = document.getElementById('iPhone_Vert').querySelector('div');
+    if (display.classList.contains('display-off')) {
+        display.classList.remove('display-off');
+    } else {
+        display.classList.add('display-off');
+    }
+    event.preventDefault()
+});
+document.getElementById('iPhone_Hor').addEventListener('click', event => {
+    const display = document.getElementById('iPhone_Hor').querySelector('div');
+    if (display.classList.contains('display-off')) {
+        display.classList.remove('display-off');
+    } else {
+        display.classList.add('display-off');
+    }
+    event.preventDefault()
+});
