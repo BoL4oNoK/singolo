@@ -85,24 +85,27 @@ body {
 }
 
 .slider {
-    
     padding: 24px 42px 51px 42px;
     position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .slider .arrows {
-    z-index: 50;
+    z-index: 5;
     cursor: pointer;
     height: 27px;
     width: 20px;
     position: absolute;
     top: 281px;
     border: none;
+    opacity: 0.5;
 }
 
 .slider .arrows:hover,
 .slider .arrows:focus {
-    background-color:  #f0f8ff;
+    opacity: 1;
 }
 
 .slider .arrow_left {
@@ -125,6 +128,48 @@ body {
 
 .slider .iPhone-Hor {
     margin: 0px 0px 123px 65px;
+}
+
+#iPhone_Vert {
+    position: absolute;
+    top: 53px;
+    left: 112px;
+    width: 215px;
+    height: 458px;
+}
+
+#iPhone_Vert .display {
+    position: absolute;
+    top: 65px;
+    left: 14px;
+    display: none;
+    width: 188px;
+    height: 333px;
+    background-color: #000000;
+}
+
+#iPhone_Hor {
+    position: absolute;
+    top: 174px;
+    right: 137px;
+    width: 458px;
+    height: 215px;
+}
+
+#iPhone_Hor .display {
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    display: none;
+    width: 333px;
+    height: 188px;
+    border-radius: 2px;
+    background-color: #000000;
+}
+
+#iPhone_Vert .display-off,
+#iPhone_Hor .display-off {
+    display: block;
 }
 
 .content {
@@ -364,6 +409,11 @@ body {
     cursor: pointer;
     color: #dedede;
     border-color: #c5c5c5;
+}
+
+.button:active,
+.button:focus {
+    outline: none;
 }
 
 .button_active {
