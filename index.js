@@ -49,6 +49,11 @@ function slide_left() {
         if (current >= slides.length) {
             current = 0;
         }
+        if (current === 1) {
+            document.getElementById('slider_main').classList.add('bgBlue');
+        } else {
+            document.getElementById('slider_main').classList.remove('bgBlue');
+        }
     }   
 }
 
@@ -64,6 +69,11 @@ function slide_right() {
         current += 1;
         if (current >= slides.length) {
             current = 0;
+        }
+        if (current === 1) {
+            document.getElementById('slider_main').classList.add('bgBlue');
+        } else {
+            document.getElementById('slider_main').classList.remove('bgBlue');
         }
     } 
 }
