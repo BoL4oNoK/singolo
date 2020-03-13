@@ -149,6 +149,7 @@ body {
     left: 17px;
     width: 215px;
     height: 458px;
+    border-radius: 27px;
 }
 
 #iPhone_Vert .display {
@@ -167,6 +168,7 @@ body {
     right: 42px;
     width: 458px;
     height: 215px;
+    border-radius: 27px;
 }
 
 #iPhone_Hor .display {
