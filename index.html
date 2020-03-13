@@ -27,18 +27,23 @@
             <div class="center">
                 <div class="wrapper">
                     <div class="slider">
-                        <button class="arrows arrow_left"></button>
-                        <div class="apple">
-                            <div id='iPhone_Vert'>
-                                <div class="display"></div>
+                        <button class="arrows arrow_left" id="arrow_left"></button>
+                        <div class="apple" id='slider'>
+                            <div class="slide_single slide_1">
+                                <div id='iPhone_Vert'>
+                                    <div class="display"></div>
+                                </div>
+                                <div id='iPhone_Hor'>
+                                    <div class="display"></div>
+                                </div>
+                                <img class="iPhone-Vert" src="./assets/img/iPhone_Vertical.png" alt="iPhone Vertical" width="243" height="487">
+                                <img class="iPhone-Hor" src="./assets/img/iPhone_Horizontal.png" alt="iPhone Horizontal" width="486" height="242">
                             </div>
-                            <div id='iPhone_Hor'>
-                                <div class="display"></div>
+                            <div class="slide_single slide_2">
+                                <img src="./assets/img/slide_2.png" alt="iPhone Vertical" width="453" height="450">
                             </div>
-                            <img class="iPhone-Vert" src="./assets/img/iPhone_Vertical.png" alt="iPhone Vertical" width="243" height="487">
-                            <img class="iPhone-Hor" src="./assets/img/iPhone_Horizontal.png" alt="iPhone Horizontal" width="486" height="242">
                         </div>
-                        <button class="arrows arrow_right"></button>
+                        <button class="arrows arrow_right" id="arrow_right"></button>
                     </div>
                 </div>
             </div>
@@ -156,8 +161,8 @@
                         <p class="contacts-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                         <div class="contacts-container">
                             <div class="contacts-item-form">
-                                <form action="./index.html" method="GET" class="contacts-form" onsubmit="return false;">
-                                    <input class="contacts-form-input" id="form-input-name" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё])+" title="Username may consist only letters and spaces" required>
+                                <form action="./index.html" method="GET" class="contacts-form" id="contacts-form">
+                                    <input class="contacts-form-input" id="form-input-name" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё0-9.])+" title="Username may consist only letters and spaces" required>
                                     <input class="contacts-form-input" id="form-input-email" type="email" name="email" placeholder="Email (Required)" pattern="([A-Za-z0-9._-])+@([A-Za-z0-9-_])+\.([a-z]){2,3}" title="Email must be in format <username>@<domain>" required>
                                     <input class="contacts-form-input" id="form-input-subject" type="text" name="subject" placeholder="Subject">
                                     <textarea  class="contacts-form-textarea" id="form-area-message" name="message" placeholder="Describe your project in detail..."></textarea>
