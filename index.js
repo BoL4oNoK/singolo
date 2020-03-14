@@ -114,6 +114,9 @@ function buttonhandler(event) {
         
         const portfolioList = PORTFOLIO.querySelectorAll('div');
         PORTFOLIO.insertAdjacentElement('afterbegin', portfolioList[portfolioList.length - 1]);
+        PORTFOLIO.querySelectorAll('img').forEach(el => {
+            el.classList.remove('portfolio-selected');
+        });
         const elem = event.target;
         elem.classList.add('button_active');
     }
