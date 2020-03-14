@@ -146,6 +146,10 @@ FORM.addEventListener('submit',  event => {
     FORM.reset();
     return false;
 });
-document.getElementById('btn-close').addEventListener('click', event => {
-    document.getElementById('pop-up_msg').classList.add('pop-up_hidden');
-});
+
+function popup_close(event) {
+    if (event.target.id === 'pop-up_msg' || event.target.id === 'btn-close') {
+        document.getElementById('pop-up_msg').classList.add('pop-up_hidden');
+    }
+}
+document.getElementById('btn-close').addEventListener('click', popup_close);
