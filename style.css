@@ -464,24 +464,14 @@ body {
     display: grid;
     max-height: 612px;
     overflow: hidden;
-    margin-top: 9px;
-    margin-bottom: 46px;
+    margin-top: 19px;
+    margin-bottom: 36px;
     grid-template-columns: repeat(4, 240px);
     grid-template-rows: repeat(3, 207px);
 }
 
 .portfolio-items {
     overflow: hidden;
-    display: flex;
-}
-
-.portfolio-container > img {
-    align-self: center;
-    justify-self: center;
-}
-
-.portfolio-items > img {
-    margin: auto;
 }
 
 .portfolio-selected {

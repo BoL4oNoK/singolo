@@ -112,7 +112,7 @@ function buttonhandler(event) {
             el.classList.remove('button_active');
         });
         
-        const portfolioList = PORTFOLIO.querySelectorAll('img');
+        const portfolioList = PORTFOLIO.querySelectorAll('div');
         PORTFOLIO.insertAdjacentElement('afterbegin', portfolioList[portfolioList.length - 1]);
         PORTFOLIO.querySelectorAll('img').forEach(el => {
             el.classList.remove('portfolio-selected');
