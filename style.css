@@ -399,7 +399,7 @@ body {
 }
 
 .portfolio-wrapper {
-    padding: 62px 20px 20px 40px;
+    padding: 62px 20px 15px 40px;
 }
 
 .portfolio-header {
@@ -462,7 +462,7 @@ body {
 
 .portfolio-container {
     display: grid;
-    max-height: 612px;
+    max-height: 617px;
     overflow: hidden;
     margin-top: 19px;
     margin-bottom: 36px;
@@ -474,8 +474,12 @@ body {
     overflow: hidden;
 }
 
+.portfolio-image {
+    margin: auto;
+}
+
 .portfolio-selected {
-    border: 5px dashed #F06C64;
+    border: 5px solid #F06C64;
 }
 
 .about_us {
