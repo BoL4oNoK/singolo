@@ -139,17 +139,20 @@ const FORM = document.getElementById('contacts-form');
 FORM.addEventListener('submit',  event => {
     event.preventDefault();
     if (FORM.checkValidity()) {
-        document.getElementById('pop-up-subject').innerText = (document.getElementById('form-input-subject').value) ? 'Тема: ' + document.getElementById('form-input-subject').value : 'Без темы';
-        document.getElementById('pop-up-message').innerText = (document.getElementById('form-area-message').value) ? 'Описание: ' + document.getElementById('form-area-message').value : 'Без описания';
+        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + document.getElementById('form-input-subject').value : 'Без темы';
+        document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? document.getElementById('form-area-message').value.substring(0, 230) + '...' : document.getElementById('form-area-message').value ) : 'Без описания';
         document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
     }
     FORM.reset();
     return false;
 });
 
+const MODAL_BLOCK = document.getElementById('pop-up_msg');
+const MODAL_CLOSE = document.getElementById('btn-close');
 function popup_close(event) {
-    if (event.target.id === 'pop-up_msg' || event.target.id === 'btn-close') {
-        document.getElementById('pop-up_msg').classList.add('pop-up_hidden');
+    if (event.target === MODAL_BLOCK || event.target === MODAL_CLOSE) {
+        MODAL_BLOCK.classList.add('pop-up_hidden');
     }
 }
-document.getElementById('btn-close').addEventListener('click', popup_close);
+MODAL_BLOCK.addEventListener('click', popup_close);
+MODAL_CLOSE.addEventListener('click', popup_close);

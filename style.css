@@ -113,8 +113,7 @@ body {
     opacity: 0.5;
 }
 
-.slider .arrows:hover,
-.slider .arrows:focus {
+.slider .arrows:hover {
     opacity: 1;
 }
 
@@ -786,14 +785,31 @@ body {
     top: 180px;
     left: calc(50vw - 150px);
     width: 300px;
-    background-color: #f06c64;
-    color: #f0d8d9;
+    background-color: #f2f2f2;
+    color: #666d89;
     padding: 5px;
     text-align: center;
+    border-radius: 20px;
+}
+
+.pop-up-header {
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #f48c8f;
+    margin-bottom: 5px;
 }
 
 .pop-up-text {
     text-align: left;
+    max-height: 115px;
+    overflow: hidden;
+}
+
+.pop-up-btn {
+    border-radius: 10px;
+    border: 1px solid #f48c8f;
+    width: 50px;
+    margin-top: 10px;
 }
 
 .pop-up_hidden {
