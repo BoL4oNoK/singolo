@@ -107,7 +107,7 @@ document.getElementById('iPhone_Hor').addEventListener('click', event => {
 
 /*** 4) Portfolio.Tabs ***/
 function buttonhandler(event) {
-    if (event.target.tagName === 'BUTTON') {
+    if (event.target.tagName === 'BUTTON' && !event.target.classList.contains('button_active')) {
         BUTTONS.querySelectorAll('button').forEach(el => {
             el.classList.remove('button_active');
         });
