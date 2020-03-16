@@ -139,7 +139,7 @@ const FORM = document.getElementById('contacts-form');
 FORM.addEventListener('submit',  event => {
     event.preventDefault();
     if (FORM.checkValidity()) {
-        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + document.getElementById('form-input-subject').value : 'Без темы';
+        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? document.getElementById('form-input-subject').value.substring(0, 100) + '...' : document.getElementById('form-input-subject').value ): 'Без темы';
         document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? document.getElementById('form-area-message').value.substring(0, 230) + '...' : document.getElementById('form-area-message').value ) : 'Без описания';
         document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
     }
