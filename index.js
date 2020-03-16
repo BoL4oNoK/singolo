@@ -88,20 +88,12 @@ slider_init();
 /*** 3) Slider.Displays ***/
 document.getElementById('iPhone_Vert').addEventListener('click', event => {
     const display = document.getElementById('iPhone_Vert').querySelector('div');
-    if (display.classList.contains('display-off')) {
-        display.classList.remove('display-off');
-    } else {
-        display.classList.add('display-off');
-    }
+    display.classList.toggle('display-off');
     event.preventDefault()
 });
 document.getElementById('iPhone_Hor').addEventListener('click', event => {
     const display = document.getElementById('iPhone_Hor').querySelector('div');
-    if (display.classList.contains('display-off')) {
-        display.classList.remove('display-off');
-    } else {
-        display.classList.add('display-off');
-    }
+    display.classList.toggle('display-off');
     event.preventDefault()
 });
 
@@ -138,11 +130,9 @@ PORTFOLIO.addEventListener('click', event => {
 const FORM = document.getElementById('contacts-form');
 FORM.addEventListener('submit',  event => {
     event.preventDefault();
-    if (FORM.checkValidity()) {
-        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? document.getElementById('form-input-subject').value.substring(0, 100) + '...' : document.getElementById('form-input-subject').value ): 'Без темы';
-        document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? document.getElementById('form-area-message').value.substring(0, 230) + '...' : document.getElementById('form-area-message').value ) : 'Без описания';
-        document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
-    }
+    document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? document.getElementById('form-input-subject').value.substring(0, 100) + '...' : document.getElementById('form-input-subject').value ): 'Без темы';
+    document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? document.getElementById('form-area-message').value.substring(0, 230) + '...' : document.getElementById('form-area-message').value ) : 'Без описания';
+    document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
     FORM.reset();
     return false;
 });
