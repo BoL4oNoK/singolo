@@ -12,8 +12,8 @@
                 <div class="wrapper-header">
                     <h1 class="logo">SINGOLO<span>*</span></h1>
                     <nav class="navbar">
-                        <ul>
-                            <li><a href="#">HOME</a></li>
+                        <ul id="main_menu">
+                            <li class="menu_active"><a href="#">HOME</a></li>
                             <li><a href="#services">SERVICES</a></li>
                             <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="#about_us">ABOUT</a></li>
@@ -24,15 +24,26 @@
             </div>
         </header>
         <main class="main">
-            <div class="center">
+            <div class="center" id="slider_main">
                 <div class="wrapper">
                     <div class="slider">
-                        <button class="arrows arrow_left"></button>
-                        <div class="apple">
-                            <img class="iPhone-Vert" src="./assets/img/iPhone_Vertical.png" alt="iPhone Vertical" width="243" height="487">
-                            <img class="iPhone-Hor" src="./assets/img/iPhone_Horizontal.png" alt="iPhone Horizontal" width="486" height="242">
+                        <button class="arrows arrow_left" id="arrow_left"></button>
+                        <div class="apple" id='slider'>
+                            <div class="slide_single slide_1">
+                                <div id='iPhone_Vert'>
+                                    <div class="display"></div>
+                                </div>
+                                <div id='iPhone_Hor'>
+                                    <div class="display"></div>
+                                </div>
+                                <img class="iPhone-Vert" src="./assets/img/iPhone_Vertical.png" alt="iPhone Vertical" width="243" height="487">
+                                <img class="iPhone-Hor" src="./assets/img/iPhone_Horizontal.png" alt="iPhone Horizontal" width="486" height="242">
+                            </div>
+                            <div class="slide_single slide_2">
+                                <img src="./assets/img/slide_2.png" alt="iPhone Vertical" width="453" height="450">
+                            </div>
                         </div>
-                        <button class="arrows arrow_right"></button>
+                        <button class="arrows arrow_right" id="arrow_right"></button>
                     </div>
                 </div>
             </div>
@@ -76,26 +87,26 @@
                         <h2 class="portfolio-header">Portfolio</h2>
                         <p class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                         <div class="buttons-bar">
-                            <ul class="buttons-list">
-                                <li><button class="button">All</button></li>
+                            <ul class="buttons-list" id="buttons_list">
+                                <li><button class="button button_active">All</button></li>
                                 <li><button class="button">Web Design</button></li>
                                 <li><button class="button">Graphic Design</button></li>
                                 <li><button class="button">Artwork</button></li>
                             </ul>
                         </div>
-                        <div class="portfolio-container">
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_1.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_2.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_3.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_4.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_5.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_6.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_7.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_8.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_9.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_10.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_11.png" alt="portfolio-image" width="220" height="187"></div>
-                            <div class="portfolio-items"><img class="portfolio-image" src="./assets/img/Image_12.png" alt="portfolio-image" width="220" height="187"></div>
+                        <div class="portfolio-container" id="portfolio-list">
+                            <img class="portfolio-image" src="./assets/img/Image_1.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_2.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_3.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_4.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_5.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_6.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_7.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_8.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_9.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_10.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_11.png" alt="portfolio-image" width="220" height="187">
+                            <img class="portfolio-image" src="./assets/img/Image_12.png" alt="portfolio-image" width="220" height="187">
                         </div>
                     </div>
                 </div>
@@ -150,12 +161,12 @@
                         <p class="contacts-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                         <div class="contacts-container">
                             <div class="contacts-item-form">
-                                <form action="./index.html" method="GET" class="contacts-form">
-                                    <input class="contacts-form-input" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё])+" title="Username may consist only letters and spaces" required>
-                                    <input class="contacts-form-input" type="email" name="email" placeholder="Email (Required)" pattern="([A-Za-z0-9._-])+@([A-Za-z0-9-_])+\.([a-z]){2,3}" title="Email must be in format <username>@<domain>" required>
-                                    <input class="contacts-form-input" type="text" name="subject" placeholder="Subject">
-                                    <textarea  class="contacts-form-textarea" name="message" placeholder="Describe your project in detail..."></textarea>
-                                    <input class="contacts-form-input" type="submit" value="Submit">
+                                <form action="./index.html" method="GET" class="contacts-form" id="contacts-form">
+                                    <input class="contacts-form-input" id="form-input-name" type="text" name="name" placeholder="Name (Required)" pattern="([A-Za-z\sА-Яа-яЁё0-9.])+" title="Username may consist only letters and spaces" required>
+                                    <input class="contacts-form-input" id="form-input-email" type="email" name="email" placeholder="Email (Required)" pattern="([A-Za-z0-9._-])+@([A-Za-z0-9-_])+\.([a-z]){2,3}" title="Email must be in format <username>@<domain>" required>
+                                    <input class="contacts-form-input" id="form-input-subject" type="text" name="subject" placeholder="Subject">
+                                    <textarea  class="contacts-form-textarea" id="form-area-message" name="message" placeholder="Describe your project in detail..." maxlength="1000"></textarea>
+                                    <input class="contacts-form-input" id="submit-button" type="submit" value="Submit">
                                 </form>
                             </div>
                             <div class="contacts-item-contacts-info">
@@ -164,6 +175,14 @@
                                 <p class="contacts-info-address"><a class="contacts-info-address-link" href="https://www.google.com/maps/search/Elm+St.+14%2F05+Lost+City/@53.8443776,27.5775488,13z" title="Find us on Google Maps">Elm St. 14/05 Lost City</a></p>
                                 <p class="contacts-info-phone"><a class="contacts-info-phone-link" href="tel:035283318635" title="Our phone number">03528 331 86 35</a></p>
                                 <p class="contacts-info-email"><a class="contacts-info-email-link" href="mailto:info@singolo.com" title="Our email">info@singolo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="pop-up_hidden" id="pop-up_msg">
+                            <div class="message">
+                                <p class="pop-up-header">Письмо отправлено</p>
+                                <p id="pop-up-subject" class="pop-up-text"></p>
+                                <p id="pop-up-message" class="pop-up-text"></p>
+                                <button class="pop-up-btn" id="btn-close">OK</button>
                             </div>
                         </div>
                     </div>                
@@ -183,5 +202,7 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="./index.js"></script>
     </body>
 </html>
