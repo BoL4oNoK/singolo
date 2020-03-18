@@ -13,7 +13,26 @@ function menuhandler(event) {
     }
 }
 
-MENU.addEventListener('click', menuhandler);
+//MENU.addEventListener('click', menuhandler);
+
+document.addEventListener('scroll', event => {
+    let curPos = window.scrollY;
+    const elList = document.querySelectorAll('section');
+    elList.forEach(el => {
+        console.log(el.offsetTop, el.offsetHeight);
+        if ((el.offsetTop - 80) <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+            MENU.querySelectorAll('li').forEach(li => {
+                li.classList.remove('menu_active');
+                if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
+                    li.classList.add('menu_active');
+                }
+            });
+        }
+    });
+    if (MENU.querySelector('li.menu_active') === null) {
+        MENU.querySelector('li').classList.add('menu_active');
+    }
+});
 
 /*** 2) Slider.Slider ***/
 const SLIDER = document.getElementById('slider');
