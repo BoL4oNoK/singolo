@@ -74,8 +74,10 @@ body {
     color: #ffffff;
 }
 
-.navbar a:hover {
-    color: #f06c64;
+@media (hover: hover) {
+    .navbar a:hover {
+        color: #f06c64;
+    }
 }
 
 .navbar .menu_active > a {

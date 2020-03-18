@@ -3,25 +3,21 @@ const BUTTONS = document.getElementById('buttons_list');
 const PORTFOLIO = document.getElementById('portfolio-list');
 
 /*** 1) Header ***/
-function menuhandler(event) {
-    if (event.target.tagName === 'A') {
-        MENU.querySelectorAll('li').forEach(el => {
-            el.classList.remove('menu_active');
-        });
-        const elem = event.target.parentNode;
-        elem.classList.add('menu_active');
-    }
-}
-
-//MENU.addEventListener('click', menuhandler);
+let avgHeight = 0;
+const SECTIONs = document.querySelectorAll('section');
+SECTIONs.forEach(el => {
+    avgHeight += el.offsetHeight; 
+});
+let ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
+ScrollOffset = (ScrollOffset < 30) ? document.querySelector('header').offsetHeight : ScrollOffset;
 
 document.addEventListener('scroll', event => {
-    let curPos = window.scrollY;
+    let curPos = window.scrollY + ScrollOffset;
     const elList = document.querySelectorAll('section');
+    const menuList =  MENU.querySelectorAll('li');
     elList.forEach(el => {
-        console.log(el.offsetTop, el.offsetHeight);
-        if ((el.offsetTop - 80) <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
-            MENU.querySelectorAll('li').forEach(li => {
+        if ((el.offsetTop) <= curPos && (el.offsetTop + el.offsetHeight - 60) > curPos) {
+            menuList.forEach(li => {
                 li.classList.remove('menu_active');
                 if (el.getAttribute('id') === li.querySelector('a').getAttribute('href').substring(1)) {
                     li.classList.add('menu_active');
@@ -29,8 +25,13 @@ document.addEventListener('scroll', event => {
             });
         }
     });
+    
+    if (document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight) {
+        MENU.querySelector('li.menu_active').classList.remove('menu_active');
+        menuList[menuList.length - 1].classList.add('menu_active');
+    }
     if (MENU.querySelector('li.menu_active') === null) {
-        MENU.querySelector('li').classList.add('menu_active');
+        menuList[0].classList.add('menu_active');
     }
 });
 
