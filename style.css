@@ -74,8 +74,10 @@ body {
     color: #ffffff;
 }
 
-.navbar a:hover {
-    color: #f06c64;
+@media (hover: hover) {
+    .navbar a:hover {
+        color: #f06c64;
+    }
 }
 
 .navbar .menu_active > a {
@@ -519,11 +521,14 @@ body {
     grid-template-rows: 300px 111px 40px;
 }
 
-.about_us-profiles {
-    padding-top: 18px;
+.about_us-container {
+    display: grid;
+    grid-template-areas: "a a a";
+    width: 960px;
+    margin-top: 43px;
 }
 
-.about_us-profile-name {
+.about_us-container .about_us-profile-name {
     font-size: 18px;
     line-height: 20px;
     font-weight: 900;
@@ -535,9 +540,10 @@ body {
     text-overflow: ellipsis;
     display: inline-block;
     letter-spacing: -0.049px;
+    margin-top: 13px;
 }
 
-.about_us-profile-description {
+.about_us-container .about_us-profile-description {
     font-size: 12px;
     line-height: 21px;
     letter-spacing: 0.01px;
@@ -549,24 +555,14 @@ body {
     overflow: hidden;
 }
 
-.about_us-items-Adam > .about_us-profile-description {
-    letter-spacing: -0.012em;
-}
-
-.about_us-items-Adam-socials,
-.about_us-items-Desmond-socials,
-.about_us-items-Scolara-socials {
-    padding-left: 1px;
+.about_us-container .about_us-socials {
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
-    width: 152px;
+    width: 153px;
 }
 
-.about_us-items-Scolara-socials {
-    padding-left: 0;
-}
-
-.about_us-socials > a {
+.about_us-container .about_us-socials > a {
     width: 32px;
     height: 32px;
 }
