@@ -40,18 +40,21 @@ window.onload = () => {
     const HAMBURGER = document.querySelector('.hamburger');
     HAMBURGER.addEventListener('click', (event) => {
         const elem = (event.target.classList.contains('hamburger')) ? event.target : event.target.parentNode;
-        const hamburger_menu = document.createElement('div');
+        const hamburger_modal = document.createElement('div');
         if (elem.classList.contains('hamburger_opened')) {
             elem.classList.remove('hamburger_opened');
             elem.parentNode.classList.remove('menu_opened');
             document.querySelector('.navbar').appendChild(MENU);
-            document.body.querySelectorAll('.hamburger__menu').forEach(el => el.remove(hamburger_menu));
+            document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove(hamburger_modal));
         } else {
             elem.classList.add('hamburger_opened');
             elem.parentNode.classList.add('menu_opened');
-            hamburger_menu.classList.add('hamburger__menu');
+            hamburger_modal.classList.add('hamburger__modal');
+            const hamburger_menu = document.createElement('div');
+            hamburger_menu.classList.add('hamburger__menu');            
             hamburger_menu.appendChild(MENU);
-            document.getElementById('hamburger').insertAdjacentElement('afterend', hamburger_menu);
+            hamburger_modal.appendChild(hamburger_menu);
+            document.getElementById('hamburger').insertAdjacentElement('afterend', hamburger_modal);
         }
 
     })
