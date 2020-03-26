@@ -179,6 +179,7 @@ body {
   display: none;
   z-index: 5;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .hamburger {
@@ -201,13 +202,18 @@ body {
 }
 
 .hamburger__modal {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(45, 48, 58, 0.6);
+  display: none;
+}
+@media (max-width: 767px) {
+  .hamburger__modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 48, 58, 0.6);
+  }
 }
 
 .hamburger__menu {
@@ -907,16 +913,25 @@ body {
 }
 
 .pop-up-header {
-  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   font-weight: 700;
+  font-style: normal;
   border-bottom: 1px solid #f48c8f;
   margin-bottom: 5px;
+  height: 20px;
 }
 
 .pop-up-text {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
   text-align: left;
-  max-height: 115px;
+  max-height: 120px;
   overflow: hidden;
+  overflow-wrap: break-word;
+  margin-top: 10px;
 }
 
 .pop-up-btn {
