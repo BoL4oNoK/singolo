@@ -200,11 +200,14 @@ body {
   top: calc(50% - 1.25px);
 }
 
-.hamburger__menu {
+.hamburger__modal {
   display: block;
   position: fixed;
-  top: 71px;
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 48, 58, 0.6);
 }
 
 .hamburger__menu {
@@ -214,7 +217,7 @@ body {
   left: 0;
   width: 278px;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: calc(100vh * 0.28);
   padding-left: 70px;
   z-index: 3;
   background-color: #2d303a;
