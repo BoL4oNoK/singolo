@@ -4,13 +4,19 @@ window.onload = () => {
     const PORTFOLIO = document.getElementById('portfolio-list');
 
     /*** 1) Header ***/
-    let avgHeight = 0;
-    const SECTIONs = document.querySelectorAll('section');
-    SECTIONs.forEach(el => {
-        avgHeight += el.offsetHeight; 
-    });
-    let ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
-    ScrollOffset = (ScrollOffset < 30) ? document.querySelector('header').offsetHeight : ScrollOffset;
+    const calculateScrollOffset = () => {
+        let avgHeight = 0;
+        const SECTIONs = document.querySelectorAll('section');
+        SECTIONs.forEach(el => {
+            avgHeight += el.offsetHeight; 
+        });
+
+        let result = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
+        return (result < document.querySelector('header').offsetHeight) ? document.querySelector('header').offsetHeight : result;
+    };
+
+    
+    let ScrollOffset = calculateScrollOffset();
 
     document.addEventListener('scroll', event => {
         let curPos = window.scrollY + ScrollOffset;
@@ -223,7 +229,7 @@ window.onload = () => {
 
     /*** Window.onResize ***/
     window.addEventListener('resize', ()=>{
-        ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
+        ScrollOffset = ScrollOffset = calculateScrollOffset();        
         sliderWidth = SLIDER.offsetWidth;
         slider_init();
         closeHamburgerMenu();
