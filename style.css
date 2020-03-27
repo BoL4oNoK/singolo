@@ -22,6 +22,10 @@ body {
   min-width: 320px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .main {
   background-color: #f2f2f2;
 }

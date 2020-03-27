@@ -57,11 +57,13 @@ window.onload = () => {
                     closeHamburgerMenu();
                 }
             });
+            document.body.classList.add('overflow-hidden');
         }
     });
 
     const closeHamburgerMenu = () => {
         if ((menu = document.querySelector('.hamburger_opened')) !== null ) {
+            document.body.classList.remove('overflow-hidden');
             menu.classList.remove('hamburger_opened');
             menu.parentNode.classList.remove('menu_opened');
             document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove());
@@ -203,6 +205,7 @@ window.onload = () => {
         document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? escapeHtmlSpecialChars(document.getElementById('form-input-subject').value.substring(0, 100)) + '...' : escapeHtmlSpecialChars(document.getElementById('form-input-subject').value) ): 'Без темы';
         document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? escapeHtmlSpecialChars(document.getElementById('form-area-message').value.substring(0, 230)) + '...' : escapeHtmlSpecialChars(document.getElementById('form-area-message').value) ) : 'Без описания';
         document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
+        document.body.classList.add('overflow-hidden');
         FORM.reset();
         return false;
     });
@@ -211,6 +214,7 @@ window.onload = () => {
     const MODAL_CLOSE = document.getElementById('btn-close');
     function popup_close(event) {
         if (event.target === MODAL_BLOCK || event.target === MODAL_CLOSE) {
+            document.body.classList.remove('overflow-hidden');
             MODAL_BLOCK.classList.add('pop-up_hidden');
         }
     }
