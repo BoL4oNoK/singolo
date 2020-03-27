@@ -313,7 +313,7 @@ body {
   padding: 27.2% 5.8% 24.4% 5.7%;
   width: 90%;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .hor {
@@ -330,7 +330,7 @@ body {
   padding: 2.8% 13.4% 2.8% 12.3%;
   width: 94.7%;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .vert .phone-disp-off,
@@ -344,17 +344,17 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  transition: all ease 1s;
+  transition: left ease 1s;
 }
 
 .slide_2 {
   text-align: center;
-  padding: 7.3% 0 6.4%;
   left: 830px;
 }
 
 .slide_2 img {
-  width: 60%;
+  padding: 5.3% 0 6.4%;
+  height: 100%;
 }
 
 .bgBlue {
