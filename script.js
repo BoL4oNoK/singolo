@@ -42,21 +42,31 @@ window.onload = () => {
         const elem = (event.target.classList.contains('hamburger')) ? event.target : event.target.parentNode;
         const hamburger_modal = document.createElement('div');
         if (elem.classList.contains('hamburger_opened')) {
-            elem.classList.remove('hamburger_opened');
+            /*elem.classList.remove('hamburger_opened');
             elem.parentNode.classList.remove('menu_opened');
-            document.querySelector('.navbar').appendChild(MENU.cloneNode(true));
-            document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove(hamburger_modal));
+            //document.querySelector('.navbar').appendChild(MENU);
+            document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove());*/
+            closeHamburgerMenu();
         } else {
             elem.classList.add('hamburger_opened');
             elem.parentNode.classList.add('menu_opened');
             hamburger_modal.classList.add('hamburger__modal');
             const hamburger_menu = document.createElement('div');
             hamburger_menu.classList.add('hamburger__menu');            
-            hamburger_menu.appendChild(MENU);
+            hamburger_menu.appendChild(MENU.cloneNode(true));
             hamburger_modal.appendChild(hamburger_menu);
             document.getElementById('hamburger').insertAdjacentElement('afterend', hamburger_modal);
+            document.querySelector('.hamburger__menu ul').addEventListener('click', () => closeHamburgerMenu());
         }
     });
+
+    const closeHamburgerMenu = () => {
+        if ((menu = document.querySelector('.hamburger_opened')) !== null ) {
+            menu.classList.remove('hamburger_opened');
+            menu.parentNode.classList.remove('menu_opened');
+            document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove());
+        }
+    };
 
     /*** 2) Slider.Slider ***/
     const SLIDER = document.getElementById('slider');
@@ -200,5 +210,6 @@ window.onload = () => {
     window.addEventListener('resize', ()=>{
         sliderWidth = SLIDER.offsetWidth;
         slider_init();
+        closeHamburgerMenu();
     });
 }
