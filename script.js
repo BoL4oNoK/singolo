@@ -56,7 +56,11 @@ window.onload = () => {
             hamburger_menu.appendChild(MENU.cloneNode(true));
             hamburger_modal.appendChild(hamburger_menu);
             document.getElementById('hamburger').insertAdjacentElement('afterend', hamburger_modal);
-            document.querySelector('.hamburger__menu ul').addEventListener('click', () => closeHamburgerMenu());
+            document.querySelector('.hamburger__menu ul').addEventListener('click', (event) => {
+                if (event.target.tagName === "A") {
+                    closeHamburgerMenu();
+                }
+            });
         }
     });
 
@@ -208,6 +212,7 @@ window.onload = () => {
 
     /*** Window.onResize ***/
     window.addEventListener('resize', ()=>{
+        ScrollOffset = document.documentElement.clientHeight - parseInt(avgHeight / SECTIONs.length);
         sliderWidth = SLIDER.offsetWidth;
         slider_init();
         closeHamburgerMenu();
