@@ -1,0 +1,18 @@
+@mixin media-tablet {
+    @media (max-width: $base-width - 1) { @content; }
+}
+  
+@mixin media-mobile {
+    @media ( max-width: $tablet-width - 1 ) { @content; }
+}
+
+@mixin media-mobile-small {
+    @media ( max-width: $mobile-width - 1 ) { @content; }
+}
+
+@mixin font ($size, $height: $size, $weight: normal, $style: normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}

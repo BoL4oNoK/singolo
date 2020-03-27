@@ -1,0 +1,21 @@
+@import 
+    "base/const",
+    "base/mixins",
+    "base/functions";
+
+@import 
+    "layouts/body",
+    "layouts/wrapper",
+    "layouts/header",
+    "base/navigation",
+    "base/hamburger";
+
+@import 
+    "components/slider",
+    "components/services",
+    "components/portfolio",
+    "components/about-us",
+    "components/contacts",
+    "components/social-icons";
+
+@import "layouts/footer";

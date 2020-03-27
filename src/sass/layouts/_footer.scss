@@ -1,0 +1,22 @@
+.footer {
+    padding: 22px 0;
+    background-color: #2d303a;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include media-mobile {
+        justify-content: center;
+    }
+}
+
+.footer-copyright {
+    color: #666d89;
+    @include font(1.3rem, 1.8rem, 900);
+    @include media-mobile {
+        display: none;
+    }
+}
