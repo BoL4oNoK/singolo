@@ -190,11 +190,22 @@ window.onload = () => {
     });
 
     /*** 6) Get a Quote ***/
+    const escapeHtmlSpecialChars = (str) => {
+        const CharMap = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;'
+        }
+        return str.replace(/[&'"<>]/g, function(char) { return CharMap[char] });
+    };
+
     const FORM = document.getElementById('contacts-form');
     FORM.addEventListener('submit',  event => {
         event.preventDefault();
-        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? document.getElementById('form-input-subject').value.substring(0, 100) + '...' : document.getElementById('form-input-subject').value ): 'Без темы';
-        document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? document.getElementById('form-area-message').value.substring(0, 230) + '...' : document.getElementById('form-area-message').value ) : 'Без описания';
+        document.getElementById('pop-up-subject').innerHTML = (document.getElementById('form-input-subject').value) ? '<b>Тема:</b> ' + ( ( document.getElementById('form-input-subject').value.length > 100 ) ? escapeHtmlSpecialChars(document.getElementById('form-input-subject').value.substring(0, 100)) + '...' : escapeHtmlSpecialChars(document.getElementById('form-input-subject').value) ): 'Без темы';
+        document.getElementById('pop-up-message').innerHTML = (document.getElementById('form-area-message').value) ? '<b>Описание:</b> ' + ( ( document.getElementById('form-area-message').value.length > 230 ) ? escapeHtmlSpecialChars(document.getElementById('form-area-message').value.substring(0, 230)) + '...' : escapeHtmlSpecialChars(document.getElementById('form-area-message').value) ) : 'Без описания';
         document.getElementById('pop-up_msg').classList.remove('pop-up_hidden');
         FORM.reset();
         return false;
