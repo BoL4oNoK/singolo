@@ -42,10 +42,6 @@ window.onload = () => {
         const elem = (event.target.classList.contains('hamburger')) ? event.target : event.target.parentNode;
         const hamburger_modal = document.createElement('div');
         if (elem.classList.contains('hamburger_opened')) {
-            /*elem.classList.remove('hamburger_opened');
-            elem.parentNode.classList.remove('menu_opened');
-            //document.querySelector('.navbar').appendChild(MENU);
-            document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove());*/
             closeHamburgerMenu();
         } else {
             elem.classList.add('hamburger_opened');
