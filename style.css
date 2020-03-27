@@ -242,6 +242,18 @@ body {
   margin-top: 27px;
 }
 
+.hor .phone-disp, .vert .phone-disp {
+  cursor: pointer;
+  border-radius: 30px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+@media (max-width: 767px) {
+  .hor .phone-disp, .vert .phone-disp {
+    border-radius: 15px;
+  }
+}
+
 .center {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
@@ -291,6 +303,7 @@ body {
 }
 
 .phone_container {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -303,17 +316,13 @@ body {
   background: url("./assets/img/phone-vertical.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 29%;
-  height: 80%;
+  width: 30%;
 }
 
 .vert .phone-disp {
-  cursor: pointer;
-  border-radius: 30px;
   padding: 27.2% 5.8% 24.4% 5.7%;
+  margin-bottom: 24px;
   width: 90%;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .hor {
@@ -325,12 +334,9 @@ body {
 }
 
 .hor .phone-disp {
-  cursor: pointer;
-  border-radius: 30px;
-  padding: 2.8% 13.4% 2.8% 12.3%;
+  padding: 2.9% 13.4% 2.8% 12.3%;
   width: 94.7%;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  margin-bottom: 24px;
 }
 
 .vert .phone-disp-off,

@@ -1,3 +1,13 @@
+%_phone_display {
+    cursor: pointer;
+    border-radius: 30px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    @include media-mobile {
+        border-radius: 15px;
+    }
+}
+
 .center {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
@@ -47,47 +57,43 @@
 }
 
 .phone_container {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     width: 90%;
     height: 100%;
-  }
+}
   
-  .vert {
+.vert {
     background: url("./assets/img/phone-vertical.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 29%;
-    height: 80%;
-  }
-  
-  .vert .phone-disp {
-    cursor: pointer;
-    border-radius: 30px;
+    width: 30%;
+}
+
+.vert .phone-disp {
+    @extend %_phone_display;
     padding: 27.2% 5.8% 24.4% 5.7%;
+    margin-bottom: 24px;
     width: 90%;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .hor {
+}
+
+.hor {
     background: url("./assets/img/phone-horizontal.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 58.6%;
     height: 40%;
-  }
-  
-  .hor .phone-disp {
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 2.8% 13.4% 2.8% 12.3%;
+}
+
+.hor .phone-disp {
+    @extend %_phone_display;
+    padding: 2.9% 13.4% 2.8% 12.3%;
     width: 94.7%;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
+    margin-bottom: 24px;
+}
 
 .vert .phone-disp-off, 
 .hor .phone-disp-off {
