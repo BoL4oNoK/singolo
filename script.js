@@ -1,5 +1,5 @@
 window.onload = () => {
-    const MENU = document.getElementById('main_menu');
+    const MENU = document.querySelector('.navigation');
     const BUTTONS = document.getElementById('buttons_list');
     const PORTFOLIO = document.getElementById('portfolio-list');
 
@@ -44,7 +44,7 @@ window.onload = () => {
         if (elem.classList.contains('hamburger_opened')) {
             elem.classList.remove('hamburger_opened');
             elem.parentNode.classList.remove('menu_opened');
-            document.querySelector('.navbar').appendChild(MENU);
+            document.querySelector('.navbar').appendChild(MENU.cloneNode(true));
             document.body.querySelectorAll('.hamburger__modal').forEach(el => el.remove(hamburger_modal));
         } else {
             elem.classList.add('hamburger_opened');
@@ -56,8 +56,7 @@ window.onload = () => {
             hamburger_modal.appendChild(hamburger_menu);
             document.getElementById('hamburger').insertAdjacentElement('afterend', hamburger_modal);
         }
-
-    })
+    });
 
     /*** 2) Slider.Slider ***/
     const SLIDER = document.getElementById('slider');
@@ -73,9 +72,12 @@ window.onload = () => {
         SLIDER.innerHTML = '';
         let elem = slides[slide2].cloneNode(true);
         elem.style.left = offset*sliderWidth - sliderWidth + 'px';
+        elem.style.transform = `translate-x(${offset*sliderWidth - sliderWidth}px)`;
         slides[current].style.left = offset*sliderWidth + 'px';
+        slides[current].style.transform = `translate-x(${offset*sliderWidth}px)`;
         offset += 1;
         slides[slide2].style.left = offset*sliderWidth + 'px';
+        slides[slide2].style.transform = "translate-x(" + offset*sliderWidth + sliderWidth + "px)";
         SLIDER.appendChild(elem);
         SLIDER.appendChild(slides[current]);
         SLIDER.appendChild(slides[slide2]);
@@ -88,6 +90,7 @@ window.onload = () => {
             let offset2 = -1;
             for (let i = 0; i < slides2.length; i += 1) {
                 slides2[i].style.left = offset2*sliderWidth - sliderWidth +'px';
+                slides2[i].style.transform = `translate-x(${offset2*sliderWidth - sliderWidth}px)`;
                 offset2 += 1;
             }
             current += 1;
@@ -109,6 +112,7 @@ window.onload = () => {
             let offset2 = -1;
             for (let i = 0; i < slides2.length; i += 1) {
                 slides2[i].style.left = offset2*sliderWidth + sliderWidth +'px';
+                slides2[i].style.transform = "translate-x(" + offset2*sliderWidth + sliderWidth + "px)";
                 offset2 += 1;
             }
             current += 1;
