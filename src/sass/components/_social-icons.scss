@@ -1,0 +1,23 @@
+.social_icons {
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+}
+
+.social_icons > a {
+    width: 32px;
+    height: 32px;
+}
+
+.social_icons__icon {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+    .social_icons__icon:hover,
+    .social_icons > a:focus > .social_icons__icon {
+        cursor: pointer;
+        background-color: #f06c64;
+        border-radius: 20px;
+    }
+}

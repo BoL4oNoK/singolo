@@ -1,0 +1,9 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: $base-width;
+    min-width: 320px;
+    padding: 0 40px;
+    @include media-mobile {
+        padding: 0 30px;
+    }
+}
