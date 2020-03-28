@@ -3,6 +3,10 @@
     scroll-margin-top: 30px;
     padding: 59px 0 67px;
     border-bottom: 5px solid #ffffff;
+    @include media-tablet {
+        padding: 53px 0 75px;
+        border: none;
+    }
     @include media-mobile {
         padding: 33px 0 45px;
     }
@@ -31,10 +35,12 @@
         max-width: 300px;
     }
     @include media-tablet {
+        margin-top: 36px;
         grid-template-columns: repeat(3, calc((100vw - 110px) / 3));
         grid-gap: 15px;
     }
     @include media-mobile {
+        margin-top: 53px;
         grid-template-columns: 1fr;
         max-height: none;
         grid-gap: 34px;
@@ -61,6 +67,12 @@
     text-overflow: ellipsis;
     display: inline-block;
     margin-top: 15px;
+    @include media-tablet {
+        margin-top: 11px;
+    }
+    @include media-mobile {
+        margin-top: 16px;
+    }
 }
 
 .about_us-container .about_us-profile-description {
@@ -69,8 +81,14 @@
     margin-top: 8px;
     text-align: justify;
     overflow: hidden;
+    @include media-tablet {
+        margin-top: 0px;
+    }
 }
 
 .about_us-container .about_us-socials {
     margin-top: 25px;
+    @include media-tablet {
+        margin-top: 13px;
+    }
 }

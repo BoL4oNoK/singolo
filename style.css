@@ -57,7 +57,7 @@ body {
 }
 @media (max-width: 767px) {
   .header {
-    padding: 25px 0 25px;
+    padding: 26px 0 25px;
     border: none;
   }
 }
@@ -113,6 +113,10 @@ body {
     top: 50%;
     left: 50%;
     z-index: 3;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-style: normal;
     transform: translate(-50%, -50%);
     transition: left 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
@@ -268,6 +272,17 @@ body {
   }
 }
 
+@media (max-width: 1019px) {
+  .wrapper-slider {
+    padding: 0 27px 0 26px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper-slider {
+    padding: 0 7px 0 6px;
+  }
+}
+
 .center {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
@@ -284,6 +299,11 @@ body {
   max-height: 594px;
   -webkit-user-select: none;
   -moz-user-select: none;
+}
+@media (max-width: 767px) {
+  .slider {
+    height: calc(100vw * 0.57);
+  }
 }
 
 .slider .arrows {
@@ -325,12 +345,22 @@ body {
   width: 90%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .phone_container {
+    align-items: normal;
+  }
+}
 
 .vert {
   background: url("./assets/img/phone-vertical.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 30%;
+}
+@media (max-width: 767px) {
+  .vert {
+    margin-top: 7%;
+  }
 }
 
 .vert .phone-disp {
@@ -344,7 +374,11 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 60%;
-  height: 40%;
+}
+@media (max-width: 767px) {
+  .hor {
+    margin-top: 22%;
+  }
 }
 
 .hor .phone-disp {
@@ -390,7 +424,7 @@ body {
 }
 @media (max-width: 1019px) {
   .content {
-    padding: 39px 0 64px;
+    padding: 39px 0 47px;
     border: none;
   }
 }
@@ -427,11 +461,13 @@ body {
 }
 @media (max-width: 1019px) {
   .container {
+    margin-top: 36px;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 767px) {
   .container {
+    margin-top: 58px;
     grid-template-columns: 1fr;
     grid-gap: 15px;
   }
@@ -459,7 +495,12 @@ body {
 }
 @media (max-width: 1019px) {
   .services_items {
-    min-height: 100px;
+    min-height: 123px;
+  }
+}
+@media (max-width: 767px) {
+  .services_items {
+    min-height: 104px;
   }
 }
 
@@ -507,9 +548,15 @@ body {
   scroll-margin-top: 30px;
   padding: 59px 0 32px;
 }
+@media (max-width: 1019px) {
+  .portfolio {
+    border-bottom: 7px solid #323746;
+    padding: 59px 0 30px;
+  }
+}
 @media (max-width: 767px) {
   .portfolio {
-    padding: 42px 0;
+    padding: 42px 0 7px;
     border: none;
   }
 }
@@ -535,6 +582,16 @@ body {
 .buttons-bar {
   margin-top: 13px;
   width: 290px;
+}
+@media (max-width: 1019px) {
+  .buttons-bar {
+    margin-top: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .buttons-bar {
+    margin-top: 17px;
+  }
 }
 @media (max-width: 374px) {
   .buttons-bar {
@@ -600,6 +657,7 @@ body {
 }
 @media (max-width: 1019px) {
   .portfolio-container {
+    margin-top: 21px;
     grid-template-areas: "a a a" "b b b" "c c c" "d d d";
   }
 }
@@ -639,6 +697,12 @@ body {
   padding: 59px 0 67px;
   border-bottom: 5px solid #ffffff;
 }
+@media (max-width: 1019px) {
+  .about_us {
+    padding: 53px 0 75px;
+    border: none;
+  }
+}
 @media (max-width: 767px) {
   .about_us {
     padding: 33px 0 45px;
@@ -676,12 +740,14 @@ body {
 }
 @media (max-width: 1019px) {
   .about_us-container {
+    margin-top: 36px;
     grid-template-columns: repeat(3, calc((100vw - 110px) / 3));
     grid-gap: 15px;
   }
 }
 @media (max-width: 767px) {
   .about_us-container {
+    margin-top: 53px;
     grid-template-columns: 1fr;
     max-height: none;
     grid-gap: 34px;
@@ -711,6 +777,16 @@ body {
   display: inline-block;
   margin-top: 15px;
 }
+@media (max-width: 1019px) {
+  .about_us-container .about_us-profile-name {
+    margin-top: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .about_us-container .about_us-profile-name {
+    margin-top: 16px;
+  }
+}
 
 .about_us-container .about_us-profile-description {
   font-size: 1.2rem;
@@ -722,9 +798,19 @@ body {
   text-align: justify;
   overflow: hidden;
 }
+@media (max-width: 1019px) {
+  .about_us-container .about_us-profile-description {
+    margin-top: 0px;
+  }
+}
 
 .about_us-container .about_us-socials {
   margin-top: 25px;
+}
+@media (max-width: 1019px) {
+  .about_us-container .about_us-socials {
+    margin-top: 13px;
+  }
 }
 
 .contacts {
@@ -737,12 +823,12 @@ body {
 }
 @media (max-width: 1019px) {
   .contacts {
-    padding: 53px 0 40px;
+    padding: 53px 0 24px;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 44px 0 42px;
+    padding: 44px 0 28px;
     border: none;
   }
 }
@@ -770,14 +856,27 @@ body {
   margin-top: 29px;
   margin-bottom: 17px;
 }
+@media (max-width: 1019px) {
+  .contacts-container {
+    grid-template-columns: 64% 32%;
+    margin-top: 10px;
+    grid-gap: 30px;
+  }
+}
 @media (max-width: 767px) {
   .contacts-container {
     grid-template-columns: 1fr;
+    margin-top: 38px;
   }
 }
 
 .contacts-item-form {
   text-align: center;
+}
+@media (max-width: 1019px) {
+  .contacts-item-form {
+    padding-top: 4px;
+  }
 }
 
 .contacts-form-input,
@@ -795,10 +894,22 @@ body {
   width: 100%;
   margin-top: 16px;
 }
+@media (max-width: 1019px) {
+  .contacts-form-input,
+.contacts-form-textarea {
+    margin-top: 12px;
+  }
+}
 
 .contacts-form-input {
   padding-left: 16px;
   letter-spacing: 0.05em;
+}
+@media (max-width: 767px) {
+  .contacts-form-input {
+    padding-left: 8px;
+    letter-spacing: normal;
+  }
 }
 
 .contacts-form-textarea {
@@ -808,6 +919,13 @@ body {
   letter-spacing: 0.035em;
   line-height: 12px;
   resize: none;
+}
+@media (max-width: 767px) {
+  .contacts-form-textarea {
+    padding-top: 10px;
+    padding-left: 8px;
+    letter-spacing: normal;
+  }
 }
 
 .contacts-form-input[type=submit] {
@@ -874,6 +992,12 @@ body {
   font-style: normal;
   text-align: justify;
 }
+@media (max-width: 1019px) {
+  .contacts-info-description {
+    padding-top: 4px;
+    margin-bottom: 10px;
+  }
+}
 
 .contacts-info-address {
   background: url("./assets/img/location-icon.png") 3px 4px no-repeat;
@@ -887,6 +1011,11 @@ body {
 .contacts-info-email {
   background: url(./assets/img/mail-icon.png) 0 7px no-repeat;
   margin-top: 3px;
+}
+@media (max-width: 767px) {
+  .contacts-info-email {
+    margin-top: 6px;
+  }
 }
 
 .contacts-info-address,
