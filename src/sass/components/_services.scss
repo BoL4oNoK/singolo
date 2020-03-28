@@ -1,6 +1,6 @@
 .content {
     color: #767e9e;
-    padding: 59px 0 46px;
+    padding: 59px 0 47px;
     border-bottom: 6px solid #ffffff;
     scroll-margin-top: 30px;
     @include media-tablet {
@@ -36,12 +36,13 @@
         grid-template-columns: 1fr;
         grid-gap: 15px;
     }
-    margin-top: 40px;
+    margin-top: 46px;
 }
 
 .services_items {
     justify-self: left;
     padding-top: 4px;
+    min-height: 104px;
     &__header {
         @include font (1.8rem, 1.8rem, 900);
     }

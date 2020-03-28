@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     height: calc(100vw * 0.58);
-    max-height: 596px;
+    max-height: 594px;
     -webkit-user-select: none;
     -moz-user-select: none;
 }
@@ -59,7 +59,7 @@
 .phone_container {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 90%;
@@ -84,7 +84,7 @@
     background: url("./assets/img/phone-horizontal.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 58.6%;
+    width: 60%;
     height: 40%;
 }
 

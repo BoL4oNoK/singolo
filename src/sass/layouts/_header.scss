@@ -4,7 +4,10 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    padding: 29px 0 35px;
+    padding: 29px 0 30px;
+    @include media-tablet {
+        padding: 31px 0 33px;
+    }
     @include media-mobile {
         padding: 25px 0 25px;
         border: none;
@@ -43,7 +46,7 @@
     @include font (2.5rem, 3.0rem, 700);
     letter-spacing: -0.03em;
     @include media-tablet {
-        @include font (1.97rem, 2.4rem, 700);
+        @include font (2.5rem, 2.5rem, 700);
     }
     @include media-mobile {
         position: absolute;
@@ -62,9 +65,12 @@
 .navbar {
     display: inline-block;
     width: 372px;
-    padding-top: 7px;
-    font-size: 12px;
+    padding-top: 13px;
+    font-size: 1.2rem;
     max-height: 14px;
+    @include media-tablet {
+        padding-top: 9px;
+    }
     @include media-mobile {
         display: none;
     }
